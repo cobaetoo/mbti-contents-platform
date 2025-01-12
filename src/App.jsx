@@ -3,7 +3,7 @@ import Main from "./page/Main";
 import Test from "./page/Test";
 import TestResult from "./page/TestResult";
 
-export const base_url = "http://localhost:5173";
+export const base_url = "https://mbti.com";
 
 function App() {
   return (
