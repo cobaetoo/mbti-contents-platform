@@ -2,6 +2,7 @@ import React from "react";
 import IntroButtonGroup from "./IntroButtonGroup";
 import { eventSenderGA } from "../../tools/tools";
 import KakaoAdfit from "../KakaoAdfit";
+import CoupangDynamicBanner from "../CoupangDynamicBanner";
 
 function Intro({ info, setMode }) {
   const onImageClick = () => {
@@ -20,6 +21,7 @@ function Intro({ info, setMode }) {
         alt={info?.mainTitle}
       />
       <KakaoAdfit />
+      <CoupangDynamicBanner unit={"introBanner"} />
       <p>
         <span style={{ fontWeight: "bold", color: "brown" }}>
           {info?.mainTitle}
