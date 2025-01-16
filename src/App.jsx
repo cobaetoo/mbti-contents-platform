@@ -4,6 +4,7 @@ import Test from "./page/Test";
 import TestResult from "./page/TestResult";
 import { useEffect } from "react";
 import ReactGA4 from "react-ga4";
+import Privacy from "./page/Privacy";
 
 export const base_url = "https://mbti-platform.shop";
 
@@ -31,6 +32,8 @@ function App() {
           path="/:testParam/result/:resultParam"
           element={<TestResult />}
         />
+        {/* Privacy Page */}
+        <Route path="/privacy" element={<Privacy />} />
       </Routes>
     </BrowserRouter>
   );
