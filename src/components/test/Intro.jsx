@@ -1,6 +1,7 @@
 import React from "react";
 import IntroButtonGroup from "./IntroButtonGroup";
 import { eventSenderGA } from "../../tools/tools";
+import KakaoAdfit from "../KakaoAdfit";
 
 function Intro({ info, setMode }) {
   const onImageClick = () => {
@@ -18,6 +19,7 @@ function Intro({ info, setMode }) {
         src={info?.mainImage}
         alt={info?.mainTitle}
       />
+      <KakaoAdfit />
       <p>
         <span style={{ fontWeight: "bold", color: "brown" }}>
           {info?.mainTitle}
