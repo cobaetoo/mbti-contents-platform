@@ -2,10 +2,23 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Main from "./page/Main";
 import Test from "./page/Test";
 import TestResult from "./page/TestResult";
+import { useEffect } from "react";
+import ReactGA4 from "react-ga4";
 
-export const base_url = "https://mbti.com";
+export const base_url = "https://mbti-platform.shop";
 
 function App() {
+  useEffect(() => {
+    ReactGA4.initialize([
+      {
+        trackingId: "G-S0V61S368S",
+        gaOptions: {
+          siteSpeedSampleRate: 100,
+        },
+      },
+    ]);
+  }, []);
+
   return (
     <BrowserRouter>
       <Routes>
