@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { TESTS } from "../../data/TESTS";
 import { Link } from "react-router-dom";
 import CoupangDynamicBanner from "../CoupangDynamicBanner";
+import AdsenseUnit from "../AdsenseUnit";
 
 const ResultThumbnailList = ({ testParam }) => {
   const [testList, setTestList] = useState(TESTS);
@@ -20,6 +21,7 @@ const ResultThumbnailList = ({ testParam }) => {
               />
             </Link>
             {idx % 2 === 0 && <CoupangDynamicBanner unit={"resultBanner"} />}
+            {idx % 2 === 0 && <AdsenseUnit slot={"4068657427"} />}
           </div>
         ))}
     </div>

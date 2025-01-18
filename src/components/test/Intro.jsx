@@ -3,6 +3,7 @@ import IntroButtonGroup from "./IntroButtonGroup";
 import { eventSenderGA } from "../../tools/tools";
 import KakaoAdfit from "../KakaoAdfit";
 import CoupangDynamicBanner from "../CoupangDynamicBanner";
+import AdsenseUnit from "../AdsenseUnit";
 
 function Intro({ info, setMode }) {
   const onImageClick = () => {
@@ -20,6 +21,7 @@ function Intro({ info, setMode }) {
         src={info?.mainImage}
         alt={info?.mainTitle}
       />
+      <AdsenseUnit slot={"1362603036"} />
       <KakaoAdfit />
       <CoupangDynamicBanner unit={"introBanner"} />
       <p>
