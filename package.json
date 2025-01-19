@@ -40,10 +40,11 @@
     "vite": "^6.0.3"
   },
   "reactSnap": {
+
     "puppeteerArgs": [
+      "--use-gl=egl",
       "--no-sandbox",
-      "--disable-setuid-sandbox",
-      "--disable-gpu"
+      "--disable-setuid-sandbox"
     ],
     "skipThirdPartyRequests": true,
     "minifyHtml": {
