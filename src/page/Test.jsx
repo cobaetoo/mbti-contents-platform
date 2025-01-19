@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import IntroRenderer from "../components/test/IntroRenderer";
 import { TESTS } from "../data/TESTS";
+import MetatagRenderer from "../components/MetatagRenderer";
 
 function Test() {
   const { testParam } = useParams();
@@ -22,6 +23,7 @@ function Test() {
 
   return (
     <div>
+      <MetatagRenderer currentTest={currentTest} />
       <IntroRenderer currentTest={currentTest} />
     </div>
   );

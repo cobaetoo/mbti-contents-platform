@@ -50,3 +50,8 @@ export default App;
 // Copy Test Link Button(Intro, Result)
 // Go-to-another Test Button(Result)
 // Go-to-Other Tests Button(Intro, Result)
+
+// SPA(Single Page Application ) & CSR(Client Side-Rendering)
+// html + Javascript -> (Page 1 -> Metatag 1)
+// =>
+// page 마다 -> A.html / B.html / C.html, ...
