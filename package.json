@@ -40,6 +40,17 @@
     "vite": "^6.0.3"
   },
   "reactSnap": {
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox",
+      "--disable-gpu"
+    ],
+    "skipThirdPartyRequests": true,
+    "minifyHtml": {
+      "collapseWhitespace": true,
+      "removeComments": true
+    },
+    "cacheAjaxRequests": false,
     "source": "dist",
     "concurrency": 1,
     "include": [
