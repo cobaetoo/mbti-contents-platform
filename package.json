@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm i @puppeteer/browsers && vite build",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "postbuild": "react-snap"
@@ -41,16 +41,10 @@
   },
   "reactSnap": {
     "puppeteerArgs": [
-      "--use-gl=egl",
       "--no-sandbox",
-      "--disable-setuid-sandbox"
+      "--disable-setuid-sandbox",
+      "--disable-gpu"
     ],
-    "skipThirdPartyRequests": true,
-    "minifyHtml": {
-      "collapseWhitespace": true,
-      "removeComments": true
-    },
-    "cacheAjaxRequests": false,
     "source": "dist",
     "concurrency": 1,
     "include": [
