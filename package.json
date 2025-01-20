@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && node sitemap-generator.js",
+    "build": "vite build && vite-ssg",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -21,8 +21,7 @@
     "react-helmet": "^6.1.0",
     "react-lottie": "^1.2.10",
     "react-router-dom": "^7.1.0",
-    "react-share": "^5.1.2",
-    "vite-plugin-prerender": "^1.0.8"
+    "react-share": "^5.1.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
