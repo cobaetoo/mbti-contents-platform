@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 // import prerender from "@prerenderer/rollup-plugin";
 // import PuppeteerRenderer from "@prerenderer/renderer-puppeteer";
-import { PrerenderPlugin } from "vite-plugin-prerender";
+import PrerenderPlugin from "vite-plugin-prerender";
 import path from "path";
 import { fileURLToPath } from "url";
 
