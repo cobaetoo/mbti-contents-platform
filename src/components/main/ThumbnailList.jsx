@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { TESTS } from "../../data/TESTS";
 import { Link, useSearchParams } from "react-router-dom";
 import { Skeleton } from "antd";
+import { FloatButton } from "antd";
+import { eventSenderGA } from "../../tools/tools";
 
 function ThumbnailList() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -26,6 +28,10 @@ function ThumbnailList() {
     // setTestList()
   }, [searchParams]);
 
+  const onBackToTopButtonClick = () => {
+    eventSenderGA("BackTpTop", "BackToTopButton", "MainPage");
+  };
+
   return (
     <div>
       {/* 이 이미지를 누르면 해당 테스트 Intro 페이지로 넘어가기 */}
@@ -42,6 +48,10 @@ function ThumbnailList() {
       ) : (
         <Skeleton active style={{ height: "20rem" }} />
       )}
+      <FloatButton.BackTop
+        visibilityHeight={400}
+        onClick={onBackToTopButtonClick}
+      />
     </div>
   );
 }

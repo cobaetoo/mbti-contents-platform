@@ -3,7 +3,18 @@ import AffiliateButton from "./AffiliateButton";
 import styles from "./affiliateButton.module.css";
 import Cookies from "js-cookie";
 
-const TestResultRenderer = ({ renderResultInfo }) => {
+const TestResultRenderer = ({ renderResultInfo, lang }) => {
+  const foreignTextsObject = {
+    Kor: {
+      title: "결과는...",
+    },
+    Eng: {
+      title: "Your result is...",
+    },
+    JP: {
+      title: "Your result is...",
+    },
+  };
   const [isOpened, setIsOpened] = useState(false);
   const [affiliateCookie, setAffiliateCookie] = useState(
     Cookies.get("affiliate") // true or undefined
@@ -22,7 +33,7 @@ const TestResultRenderer = ({ renderResultInfo }) => {
 
   return (
     <div>
-      <h3>결과는...</h3>
+      <h3>{lang && foreignTextsObject[lang].title}</h3>
       <div
         className={styles.resultImageDiv}
         style={{ height: affiliateButtonOpened ? "100%" : "15rem" }}
@@ -34,7 +45,9 @@ const TestResultRenderer = ({ renderResultInfo }) => {
         />
       </div>
       {/* Button Open Condition */}
-      {!affiliateButtonOpened && <AffiliateButton setIsOpened={setIsOpened} />}
+      {!affiliateButtonOpened && (
+        <AffiliateButton lang={lang} setIsOpened={setIsOpened} />
+      )}
     </div>
   );
 };

@@ -4,7 +4,7 @@ import Cookies from "js-cookie";
 
 export const cookieTime = (1 / 24) * 2;
 
-const AffiliateButton = ({ setIsOpened }) => {
+const AffiliateButton = ({ setIsOpened, lang }) => {
   const onButtonClick = () => {
     setIsOpened(true);
     Cookies.set("affiliate", true, {
@@ -12,6 +12,11 @@ const AffiliateButton = ({ setIsOpened }) => {
       path: "",
       secure: true,
     });
+  };
+  const foreignTextsObject = {
+    Kor: "버튼 누르고 결과 보기",
+    Eng: "Click the button to see the result",
+    JP: "Click the button to see the result",
   };
 
   return (
@@ -22,7 +27,7 @@ const AffiliateButton = ({ setIsOpened }) => {
     >
       <div className={styles.coverDiv}>
         <button onClick={onButtonClick} className={styles.coverButton}>
-          버튼 누르고 결과 보기
+          {lang && foreignTextsObject[lang]}
         </button>
       </div>
     </a>

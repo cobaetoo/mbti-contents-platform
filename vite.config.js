@@ -11,6 +11,7 @@ export default defineConfig({
       routes: [
         "/",
         "/personalColor",
+        "/blog/personalColor",
         "/personalColorEng",
         "/personalColorEng/result/ESTJ",
       ],

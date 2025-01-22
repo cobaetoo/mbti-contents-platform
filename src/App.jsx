@@ -5,6 +5,7 @@ import TestResult from "./page/TestResult";
 import { useEffect } from "react";
 import ReactGA4 from "react-ga4";
 import Privacy from "./page/Privacy";
+import Blog from "./page/Blog";
 
 export const base_url = "https://mbti-platform.shop";
 
@@ -32,6 +33,10 @@ function App() {
           path="/:testParam/result/:resultParam"
           element={<TestResult />}
         />
+        {/* Blog Page */}
+        <Route path="/blog/:testParam" element={<Blog />} />
+        {/* mbti.com/blog/personalColor */}
+        {/* mbti.com/blog */}
         {/* Privacy Page */}
         <Route path="/privacy" element={<Privacy />} />
       </Routes>
