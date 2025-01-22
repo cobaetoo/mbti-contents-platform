@@ -7,9 +7,9 @@ export const TESTS = [
       mainUrl: "personalColor",
       scoreType: "MBTI",
       mainImage:
-        "https://www.dropbox.com/scl/fi/u4moi8xe7wme1ao796ujw/personalColor-intro.png?rlkey=qn2igicxafksekjx9fsnukk9z&st=ifpx4r50&dl=1",
+        "https://images.mbti-platform.shop/intro/personalColor-intro.png",
       thumbImage:
-        "https://www.dropbox.com/scl/fi/9iqe0gypnnclo5elt3hpi/personalColor-thumb.png?rlkey=m9uwdd6xww0v66g2gjo2688jz&st=ut5c22fv&dl=1",
+        "https://images.mbti-platform.shop/thumbnail/personalColor-thumb.avif",
       lang: "Kor",
       category: "characteristic",
     },
@@ -861,3 +861,6 @@ export const TESTS = [
     ],
   },
 ];
+
+// mbti.com
+// images.mbti.com

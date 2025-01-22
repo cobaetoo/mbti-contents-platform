@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { base_url } from "../App";
+import { base_url } from "../../App";
 
 const MetatagRenderer = ({ currentTest }) => {
   return (
