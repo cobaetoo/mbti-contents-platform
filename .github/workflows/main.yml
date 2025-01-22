@@ -28,7 +28,7 @@ jobs:
           aws s3 cp \
             --recursive \
             --region ap-northeast-2 \
-            ./build s3://mbti-contents-platform
+            ./dist s3://mbti-contents-platform
 
       - name: Invalidate CloudFront
         uses: chetan/invalidate-cloudfront-action@v1
