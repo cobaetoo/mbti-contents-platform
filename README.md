@@ -6,6 +6,7 @@
 
 - 이 강의에 있는 소스코드 및 콘텐츠는 모두 강의를 수강하시는 분들의 학습을 위해 공유되고 있습니다.
 - 오류 또는 버그 등의 문의 사항은 인프런을 통해 남겨주세요.
+- 이 Repository에 있는 모든 secretKey 및 API 등의 키값을 모두 삭제되었습니다. 수강생 본인 계정의 key로 대체 해주세요.
 
 ---
 
@@ -22,6 +23,8 @@
 ### [한달 런칭 챌린지 클럽]
 
 ##### 1개월에 하나씩 어떻게든 수익형 서비스를 런칭해보자!
+
+[![](https://cdn.maily.so/agujo6td01uwtymyunyihvbtctdc)](https://forms.gle/vFkfeqHAs5y8Khbr5)
 
 [1기 신청폼](https://forms.gle/vFkfeqHAs5y8Khbr5)
 
