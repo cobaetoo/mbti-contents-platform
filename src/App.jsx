@@ -6,6 +6,9 @@ import { useEffect } from "react";
 import ReactGA4 from "react-ga4";
 import Privacy from "./page/Privacy";
 import Blog from "./page/Blog";
+import SignUp from "./page/SignUp";
+import AuthCallback from "./page/AuthCallback";
+import MyPage from "./page/MyPage";
 
 export const base_url = "https://mbti-platform.shop";
 
@@ -39,6 +42,9 @@ function App() {
         {/* mbti.com/blog */}
         {/* Privacy Page */}
         <Route path="/privacy" element={<Privacy />} />
+        <Route path="/SignUp" element={<SignUp />} />
+        <Route path="/authCallback" element={<AuthCallback />} />
+        <Route path="/myPage" element={<MyPage />} />
       </Routes>
     </BrowserRouter>
   );
