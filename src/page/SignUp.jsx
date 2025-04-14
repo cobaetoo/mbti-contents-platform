@@ -20,7 +20,6 @@ const SignUp = () => {
   };
   return (
     <div>
-      {console.log("MODE", import.meta.env.MODE)}
       <h1>소셜 로그인</h1>
       <h3>간편하게 로그인해보세요</h3>
       <div>
