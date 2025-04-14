@@ -12,6 +12,11 @@ jobs:
       - name: git clone
         uses: actions/checkout@v3
 
+      - name: .env setting
+        run: |
+          echo "VITE_SUPABASE_ANON_KEY=${{ secrets.VITE_SUPABASE_ANON_KEY }}" >> .env
+          echo "VITE_SUPABASE_URL=${{ secrets.VITE_SUPABASE_URL }}" >> .env
+
       - name: npm install
         run: |
           npm cache clean --force
