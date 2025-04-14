@@ -18,6 +18,7 @@ const SignUp = () => {
       },
     });
   };
+
   return (
     <div>
       <h1>소셜 로그인</h1>
